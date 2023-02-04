@@ -1,0 +1,39 @@
+/*
+
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+*/
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n, i = 1, j;
+  cout<<"enter the no. of rows";
+  cin >> n;
+  while (i <= n) {
+    int k = 1;
+    while (k <= n - i) {
+      cout << " ";
+      k++;
+    }
+    int j = 1;
+    while (j <= i) {
+      cout << "*";
+      j++;
+    }
+    int l=i-1;
+    while(l)
+    {
+    cout<<"*";
+    l--;
+    }
+    cout << endl;
+    i++;
+  }
+  return 0;
+}
